@@ -1,0 +1,4323 @@
+{
+ "main": {
+  "n_docs": 372,
+  "n_after_dedup": 357,
+  "removed": 15,
+  "raw": {
+   "vocab_size": 8793,
+   "total_tokens": 71061,
+   "hapax": 4291,
+   "mean_doc_len": 199.05042016806723,
+   "median_doc_len": 144.0,
+   "type_token_ratio": 0.12373875965719593
+  },
+  "processed": {
+   "vocab_size": 5276,
+   "total_tokens": 37798,
+   "hapax": 2203,
+   "mean_doc_len": 105.87675070028011,
+   "median_doc_len": 74.0,
+   "type_token_ratio": 0.13958410497909943
+  },
+  "indexed_vocab": 2609,
+  "pruned": 2667,
+  "raw_top": [
+   [
+    "the",
+    3803
+   ],
+   [
+    "to",
+    1974
+   ],
+   [
+    "of",
+    1816
+   ],
+   [
+    "in",
+    1475
+   ],
+   [
+    "a",
+    1448
+   ],
+   [
+    "said",
+    1378
+   ],
+   [
+    "and",
+    1375
+   ],
+   [
+    "The",
+    625
+   ],
+   [
+    "for",
+    614
+   ],
+   [
+    "that",
+    609
+   ],
+   [
+    "on",
+    587
+   ],
+   [
+    "pct",
+    534
+   ],
+   [
+    "is",
+    457
+   ],
+   [
+    "U",
+    426
+   ],
+   [
+    "with",
+    412
+   ]
+  ],
+  "proc_top": [
+   [
+    "rate",
+    411
+   ],
+   [
+    "bank",
+    409
+   ],
+   [
+    "trade",
+    339
+   ],
+   [
+    "market",
+    314
+   ],
+   [
+    "oil",
+    244
+   ],
+   [
+    "year",
+    229
+   ],
+   [
+    "billion",
+    202
+   ],
+   [
+    "last",
+    198
+   ],
+   [
+    "exchange",
+    168
+   ],
+   [
+    "official",
+    167
+   ],
+   [
+    "foreign",
+    165
+   ],
+   [
+    "price",
+    159
+   ],
+   [
+    "day",
+    156
+   ],
+   [
+    "new",
+    153
+   ],
+   [
+    "company",
+    146
+   ]
+  ],
+  "train": 249,
+  "test": 108,
+  "accuracy": 0.8055555555555556,
+  "macro": {
+   "precision": 0.8160340691300444,
+   "recall": 0.8055555555555555,
+   "f1": 0.8070382882882883
+  },
+  "weighted": {
+   "precision": 0.8160340691300445,
+   "recall": 0.8055555555555556,
+   "f1": 0.8070382882882883
+  },
+  "per_class": {
+   "acq": {
+    "precision": 0.8947368421052632,
+    "recall": 0.9444444444444444,
+    "f1": 0.918918918918919,
+    "support": 18
+   },
+   "crude": {
+    "precision": 0.8823529411764706,
+    "recall": 0.8333333333333334,
+    "f1": 0.8571428571428571,
+    "support": 18
+   },
+   "interest": {
+    "precision": 0.7647058823529411,
+    "recall": 0.7222222222222222,
+    "f1": 0.7428571428571428,
+    "support": 18
+   },
+   "money-fx": {
+    "precision": 0.6363636363636364,
+    "recall": 0.7777777777777778,
+    "f1": 0.7000000000000001,
+    "support": 18
+   },
+   "ship": {
+    "precision": 0.9285714285714286,
+    "recall": 0.7222222222222222,
+    "f1": 0.8125000000000001,
+    "support": 18
+   },
+   "trade": {
+    "precision": 0.7894736842105263,
+    "recall": 0.8333333333333334,
+    "f1": 0.8108108108108109,
+    "support": 18
+   }
+  },
+  "confusion": [
+   [
+    17,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    15,
+    0,
+    1,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    13,
+    5,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    2,
+    14,
+    0,
+    2
+   ],
+   [
+    2,
+    1,
+    1,
+    0,
+    13,
+    1
+   ],
+   [
+    0,
+    0,
+    1,
+    2,
+    0,
+    15
+   ]
+  ],
+  "classes": [
+   "acq",
+   "crude",
+   "interest",
+   "money-fx",
+   "ship",
+   "trade"
+  ],
+  "purity": 0.5882352941176471,
+  "rand_index": 0.8225222673338999,
+  "ri_counts": {
+   "TP": 6386,
+   "FP": 7221,
+   "FN": 4057,
+   "TN": 45882
+  },
+  "contingency": [
+   [
+    2,
+    42,
+    0,
+    0,
+    41,
+    1
+   ],
+   [
+    1,
+    0,
+    43,
+    21,
+    0,
+    2
+   ],
+   [
+    0,
+    0,
+    6,
+    0,
+    0,
+    0
+   ],
+   [
+    49,
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   [
+    0,
+    4,
+    9,
+    38,
+    2,
+    54
+   ],
+   [
+    7,
+    13,
+    1,
+    0,
+    16,
+    3
+   ]
+  ],
+  "kmeans_log": [
+   {
+    "iteration": 1,
+    "reassigned": 6,
+    "max_centroid_shift": 0.9417201173904475,
+    "sse": 331.64548148600335,
+    "sizes": [
+     65,
+     88,
+     20,
+     58,
+     91,
+     35
+    ]
+   },
+   {
+    "iteration": 2,
+    "reassigned": 33,
+    "max_centroid_shift": 0.15543111283259356,
+    "sse": 329.6972890507399,
+    "sizes": [
+     75,
+     87,
+     15,
+     53,
+     90,
+     37
+    ]
+   },
+   {
+    "iteration": 3,
+    "reassigned": 20,
+    "max_centroid_shift": 0.30468399162300197,
+    "sse": 328.137907046857,
+    "sizes": [
+     78,
+     90,
+     9,
+     52,
+     90,
+     38
+    ]
+   },
+   {
+    "iteration": 4,
+    "reassigned": 8,
+    "max_centroid_shift": 0.22277559249069734,
+    "sse": 327.337013638647,
+    "sizes": [
+     79,
+     91,
+     7,
+     50,
+     91,
+     39
+    ]
+   },
+   {
+    "iteration": 5,
+    "reassigned": 8,
+    "max_centroid_shift": 0.17045874336105124,
+    "sse": 326.88044477132235,
+    "sizes": [
+     82,
+     87,
+     6,
+     49,
+     94,
+     39
+    ]
+   },
+   {
+    "iteration": 6,
+    "reassigned": 5,
+    "max_centroid_shift": 0.026094510691576457,
+    "sse": 326.73454914559346,
+    "sizes": [
+     83,
+     88,
+     6,
+     49,
+     92,
+     39
+    ]
+   },
+   {
+    "iteration": 7,
+    "reassigned": 9,
+    "max_centroid_shift": 0.039019268223850614,
+    "sse": 326.454149481719,
+    "sizes": [
+     83,
+     83,
+     6,
+     49,
+     97,
+     39
+    ]
+   },
+   {
+    "iteration": 8,
+    "reassigned": 10,
+    "max_centroid_shift": 0.04379354566794376,
+    "sse": 326.1276092774709,
+    "sizes": [
+     85,
+     77,
+     6,
+     50,
+     100,
+     39
+    ]
+   },
+   {
+    "iteration": 9,
+    "reassigned": 11,
+    "max_centroid_shift": 0.04528789668249151,
+    "sse": 325.7697944396535,
+    "sizes": [
+     87,
+     75,
+     6,
+     50,
+     99,
+     40
+    ]
+   },
+   {
+    "iteration": 10,
+    "reassigned": 7,
+    "max_centroid_shift": 0.0387695457068821,
+    "sse": 325.558469655346,
+    "sizes": [
+     88,
+     70,
+     6,
+     50,
+     103,
+     40
+    ]
+   },
+   {
+    "iteration": 11,
+    "reassigned": 7,
+    "max_centroid_shift": 0.03293402832673377,
+    "sse": 325.37210613158527,
+    "sizes": [
+     86,
+     67,
+     6,
+     51,
+     107,
+     40
+    ]
+   },
+   {
+    "iteration": 12,
+    "reassigned": 0,
+    "max_centroid_shift": 0.0,
+    "sse": 325.37210613158527,
+    "sizes": [
+     86,
+     67,
+     6,
+     51,
+     107,
+     40
+    ]
+   }
+  ],
+  "kmeans_stop": "no document changed cluster (assignments converged)",
+  "kmeans_seeds": [
+   "RTR-04425",
+   "RTR-20262",
+   "RTR-12040",
+   "RTR-11349",
+   "RTR-15384",
+   "RTR-20653"
+  ],
+  "kmeans_restart_sse": [
+   330.5596471007304,
+   327.5526865390503,
+   325.37210613158527,
+   326.3582732959657,
+   329.6702228544782
+  ],
+  "pca_var": [
+   0.01768241902935331,
+   0.014739261883076765
+  ],
+  "precision_at_5": 0.7210084033613444,
+  "top_features": {
+   "acq": [
+    [
+     "acquisition",
+     4.456276489037231
+    ],
+    [
+     "stake",
+     4.322745096412708
+    ],
+    [
+     "partnership",
+     3.763129308477286
+    ],
+    [
+     "keycorp",
+     3.676117931487656
+    ],
+    [
+     "taft",
+     3.676117931487656
+    ],
+    [
+     "chrysler",
+     3.676117931487656
+    ],
+    [
+     "hutton",
+     3.5808077516833317
+    ],
+    [
+     "shareholder",
+     3.475447236025505
+    ]
+   ],
+   "crude": [
+    [
+     "barrel",
+     5.383420618533066
+    ],
+    [
+     "bpd",
+     5.173700087550997
+    ],
+    [
+     "opec",
+     5.068339571893171
+    ],
+    [
+     "crude",
+     4.298231350197097
+    ],
+    [
+     "energy",
+     4.257409355676842
+    ],
+    [
+     "refinery",
+     3.969727283225061
+    ],
+    [
+     "ct",
+     3.7874057264311065
+    ],
+    [
+     "oil",
+     3.6506946808892042
+    ]
+   ],
+   "interest": [
+    [
+     "thai",
+     3.4964586904802353
+    ],
+    [
+     "three-month",
+     3.2733151391660256
+    ],
+    [
+     "eurosterling",
+     3.2733151391660256
+    ],
+    [
+     "maturity",
+     3.065675774387781
+    ],
+    [
+     "borrower",
+     2.9856330667142448
+    ],
+    [
+     "mortgage",
+     2.9856330667142448
+    ],
+    [
+     "lend",
+     2.916640195227293
+    ],
+    [
+     "six-month",
+     2.80331150992029
+    ]
+   ],
+   "money-fx": [
+    [
+     "stoltenberg",
+     4.076540324299356
+    ],
+    [
+     "poehl",
+     3.948706952789471
+    ],
+    [
+     "louvre",
+     3.8021034785975956
+    ],
+    [
+     "em",
+     3.5657147005333654
+    ],
+    [
+     "employment",
+     3.496721829046414
+    ],
+    [
+     "germany's",
+     3.054889076767375
+    ],
+    [
+     "band",
+     3.054889076767375
+    ],
+    [
+     "eyskens",
+     2.8035746484864688
+    ]
+   ],
+   "ship": [
+    [
+     "ship",
+     5.314616102475688
+    ],
+    [
+     "port",
+     4.02676181416905
+    ],
+    [
+     "seaman",
+     3.9622232930314785
+    ],
+    [
+     "vessel",
+     3.779901736237524
+    ],
+    [
+     "redundancy",
+     3.652068364727639
+    ],
+    [
+     "ferry",
+     3.652068364727639
+    ],
+    [
+     "employer",
+     3.5567581849233143
+    ],
+    [
+     "sims",
+     3.451397669265488
+    ]
+   ],
+   "trade": [
+    [
+     "gatt",
+     3.964955572278895
+    ],
+    [
+     "yeutter",
+     3.8024366427811205
+    ],
+    [
+     "tariff",
+     3.8024366427811205
+    ],
+    [
+     "poland",
+     3.4541299485129047
+    ],
+    [
+     "sanction",
+     3.3671185715232745
+    ],
+    [
+     "polish",
+     3.2718083917189498
+    ],
+    [
+     "clercq",
+     3.166447876061124
+    ],
+    [
+     "chip",
+     3.166447876061124
+    ]
+   ]
+  },
+  "centroid_terms": [
+   [
+    "oil",
+    "crude",
+    "barrel",
+    "ship",
+    "port",
+    "bpd",
+    "strike",
+    "opec"
+   ],
+   [
+    "bank",
+    "rate",
+    "stg",
+    "lend",
+    "money",
+    "prime",
+    "point",
+    "bill"
+   ],
+   [
+    "maturity",
+    "old",
+    "day",
+    "short-term",
+    "adjust",
+    "discount",
+    "loan",
+    "home"
+   ],
+   [
+    "share",
+    "stake",
+    "stock",
+    "common",
+    "company",
+    "acquire",
+    "group",
+    "acquisition"
+   ],
+   [
+    "trade",
+    "japan",
+    "currency",
+    "economic",
+    "country",
+    "foreign",
+    "exchange",
+    "nation"
+   ],
+   [
+    "sea",
+    "water",
+    "canadian",
+    "continental",
+    "sink",
+    "drill",
+    "vessel",
+    "oil"
+   ]
+  ],
+  "cluster_map": {
+   "0": [
+    "crude",
+    0.4883720930232558
+   ],
+   "1": [
+    "interest",
+    0.6417910447761194
+   ],
+   "2": [
+    "interest",
+    1.0
+   ],
+   "3": [
+    "acq",
+    0.9607843137254902
+   ],
+   "4": [
+    "trade",
+    0.5046728971962616
+   ],
+   "5": [
+    "ship",
+    0.4
+   ]
+  },
+  "predictions": [
+   {
+    "doc_id": "RTR-07500",
+    "title": "U.S. SAYS NO SIGNAL BEING SENT BY SHIP MOVEMENTS",
+    "actual": "ship",
+    "predicted": "ship"
+   },
+   {
+    "doc_id": "RTR-05796",
+    "title": "STUDY PREDICTS U.S. DEPENDENCE ON FOREIGN OIL",
+    "actual": "crude",
+    "predicted": "crude"
+   },
+   {
+    "doc_id": "RTR-01499",
+    "title": "BALDRIGE CONCERNED ABOUT KOREAN/TAIWAN DEFICITS",
+    "actual": "trade",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-11738",
+    "title": "LILLY <LLY> CUTS LIPOSOME CO <LIPO> STAKE",
+    "actual": "acq",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-10625",
+    "title": "ISLAMIC BANKS ESTABLISH 50 MLN DLR TRADE PORTFOLIO",
+    "actual": "trade",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-04125",
+    "title": "CHINA CLOSES SECOND ROUND OF OFFSHORE OIL BIDS",
+    "actual": "crude",
+    "predicted": "crude"
+   },
+   {
+    "doc_id": "RTR-06483",
+    "title": "BANK OF ENGLAND LENDS ONE BILLION STG AT 10 PCT",
+    "actual": "interest",
+    "predicted": "interest"
+   },
+   {
+    "doc_id": "RTR-08098",
+    "title": "U.S. CREDIT MARKET OUTLOOK - MINI-REFUNDING",
+    "actual": "money-fx",
+    "predicted": "interest"
+   },
+   {
+    "doc_id": "RTR-16096",
+    "title": "YIELD RISES ON 30-DAY SAMA DEPOSITS",
+    "actual": "interest",
+    "predicted": "interest"
+   },
+   {
+    "doc_id": "RTR-06841",
+    "title": "CANADIAN PACIFIC <CP> SEEKS BUYER FOR UNIT",
+    "actual": "acq",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-09777",
+    "title": "TRADE SURPLUS CUT WOULD BENEFIT JAPAN - SUMITA",
+    "actual": "trade",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-13245",
+    "title": "ZAMBIAN CURRENCY FALLS AT FOREIGN EXCHANGE AUCTION",
+    "actual": "money-fx",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-01226",
+    "title": "ROSTENKOWSKI RELUCTANT TO BACK TAX HIKE",
+    "actual": "trade",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-20114",
+    "title": "<PLUM HOLDING INC> STARTS HOILLY SUGAR <HLY> BID",
+    "actual": "acq",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-03449",
+    "title": "SUMITA SAYS LITTLE ROOM FOR BANK TO EASE POLICY",
+    "actual": "interest",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-10947",
+    "title": "CRUDE OIL NETBACKS UP IN U.S., MEDITERRANEAN",
+    "actual": "crude",
+    "predicted": "crude"
+   },
+   {
+    "doc_id": "RTR-04048",
+    "title": "TAIWAN FURTHER RELAXES FOREIGN GOODS IMPORT CURBS",
+    "actual": "trade",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-06125",
+    "title": "U.S OIL TAX WOULD NOT AFFECT PDVSA-CHAMPLIN DEAL",
+    "actual": "crude",
+    "predicted": "crude"
+   },
+   {
+    "doc_id": "RTR-07196",
+    "title": "PANAMA CANAL OFFICIAL CONFIRMS NO 1988 TOLL RISE",
+    "actual": "ship",
+    "predicted": "ship"
+   },
+   {
+    "doc_id": "RTR-03046",
+    "title": "HUTCHISON UNIT BUYS CONTAINER CRANES FROM JAPAN",
+    "actual": "ship",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-17462",
+    "title": "MOSCOW SAYS WILL RETALIATE AGAINST GULF ATTACKS",
+    "actual": "ship",
+    "predicted": "ship"
+   },
+   {
+    "doc_id": "RTR-07067",
+    "title": "CANADIAN ROXY IN NEW ALBERTA OIL DISCOVERY",
+    "actual": "crude",
+    "predicted": "crude"
+   },
+   {
+    "doc_id": "RTR-04201",
+    "title": "BORG-WARNER <BOR> TO SELL UNIT FOR 240 MLN DLRS",
+    "actual": "acq",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-19832",
+    "title": "CHEVRON N.SEA FIND MAY HOLD 300 MLN BBLS -ANALYSTS",
+    "actual": "crude",
+    "predicted": "crude"
+   },
+   {
+    "doc_id": "RTR-07626",
+    "title": "SENATE WANTS JAPAN SEMICONDUCTER PACT ENFORCED",
+    "actual": "trade",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-07635",
+    "title": "C.O.M.B. <CMCO> TO ACQUIRE REST OF CABLE VALUE",
+    "actual": "acq",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-10416",
+    "title": "U.K. MONEY MARKET GIVEN FURTHER 663 MLN STG HELP",
+    "actual": "money-fx",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-06436",
+    "title": "SHIPS HELD UP AT CALCUTTA",
+    "actual": "ship",
+    "predicted": "ship"
+   },
+   {
+    "doc_id": "RTR-07310",
+    "title": "GERMAN BANKS SEE LOW INTEREST RATES CONTINUING",
+    "actual": "interest",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-00281",
+    "title": "CHINA SIGNS WORLD BANK LOAN FOR TIANJIN PORT",
+    "actual": "ship",
+    "predicted": "crude"
+   },
+   {
+    "doc_id": "RTR-09906",
+    "title": "ST LAWRENCE SEAWAY OPENING STILL MARCH 31",
+    "actual": "ship",
+    "predicted": "ship"
+   },
+   {
+    "doc_id": "RTR-12259",
+    "title": "ROYAL BANK/CANADA UPS U.S. BASE RATE",
+    "actual": "interest",
+    "predicted": "interest"
+   },
+   {
+    "doc_id": "RTR-04591",
+    "title": "INTERCONNECT OFFERS TO BUY GATES LEARJET <GLJ>",
+    "actual": "acq",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-20261",
+    "title": "NEW CONTAINER CRANES ARRIVE AT TANZANIA PORT",
+    "actual": "ship",
+    "predicted": "ship"
+   },
+   {
+    "doc_id": "RTR-16745",
+    "title": "MIYAZAWA SEES EVENTUAL LOWER U.S. TRADE DEFICIT",
+    "actual": "trade",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-04518",
+    "title": "ALLIED-LYONS SEES NO CHANGE IN HIRAM WALKER STAKE",
+    "actual": "acq",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-20959",
+    "title": "U.S. MILITARY LEADER PREDICTS IRANIAN RESPONSE",
+    "actual": "crude",
+    "predicted": "ship"
+   },
+   {
+    "doc_id": "RTR-12472",
+    "title": "JAPAN WARNS OF ANTI-U.S. SENTIMENT IN TRADE ROW",
+    "actual": "trade",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-03461",
+    "title": "HUNGARY TO DEVALUE FORINT AGAINST WESTERN UNITS",
+    "actual": "money-fx",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-06757",
+    "title": "PERU SHORT-TERM TRADE LINES RISE TO 430 MLN DLRS",
+    "actual": "trade",
+    "predicted": "interest"
+   },
+   {
+    "doc_id": "RTR-10748",
+    "title": "B AND C REORGANISES COMMERCIAL OPERATIONS",
+    "actual": "ship",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-21071",
+    "title": "GROUP SELLS MOST OF STAKE IN CCX INC <CCX>",
+    "actual": "acq",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-06091",
+    "title": "ANALYSTS SEE EARLY ONE POINT CUT IN U.K. BASE RATE",
+    "actual": "interest",
+    "predicted": "interest"
+   },
+   {
+    "doc_id": "RTR-18108",
+    "title": "ENERGY SECRETARY SEES HIGHER OIL PRICES",
+    "actual": "crude",
+    "predicted": "crude"
+   },
+   {
+    "doc_id": "RTR-06301",
+    "title": "API SAYS DISTILLATE, GAS STOCKS OFF IN WEEK",
+    "actual": "crude",
+    "predicted": "crude"
+   },
+   {
+    "doc_id": "RTR-03433",
+    "title": "MIYAZAWA SAYS PARIS ACCORD HELPING STABILISE RATES",
+    "actual": "money-fx",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-10606",
+    "title": "TAIWAN TO STUDY SUSPENDING FOREX CONTROLS",
+    "actual": "money-fx",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-15200",
+    "title": "TURKEY CALLS FOR DIALOGUE TO SOLVE DISPUTE",
+    "actual": "crude",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-15049",
+    "title": "FED EXPECTED TO SET CUSTOMER REPURCHASES",
+    "actual": "interest",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-15230",
+    "title": "IRAQI TROOPS REPORTED PUSHING BACK IRANIANS",
+    "actual": "crude",
+    "predicted": "crude"
+   },
+   {
+    "doc_id": "RTR-08138",
+    "title": "PHILIPPINES POSTS 68 MLN DLR JANUARY TRADE DEFICIT",
+    "actual": "trade",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-00894",
+    "title": "JAPAN MOVES TO TIGHTEN CHIP-EXPORT CURBS",
+    "actual": "trade",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-02046",
+    "title": "DIAMOND SHAMROCK <DIA> RAISES CRUDE OIL POSTINGS",
+    "actual": "crude",
+    "predicted": "crude"
+   },
+   {
+    "doc_id": "RTR-19238",
+    "title": "RHINE BLOCKED FOR THREE MORE WEEKS - SALVAGER",
+    "actual": "ship",
+    "predicted": "ship"
+   },
+   {
+    "doc_id": "RTR-17758",
+    "title": "CCC INTEREST HIGHER IN JUNE, USDA SAYS",
+    "actual": "interest",
+    "predicted": "interest"
+   },
+   {
+    "doc_id": "RTR-01478",
+    "title": "SPAIN TO LAUNCH EXPORT DRIVE",
+    "actual": "trade",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-02025",
+    "title": "YEUTTER PUTS CURRENCY BURDEN ON TAIWAN, KOREA",
+    "actual": "money-fx",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-16274",
+    "title": "FHLBB CHANGES SHORT-TERM DISCOUNT NOTE RATES",
+    "actual": "interest",
+    "predicted": "interest"
+   },
+   {
+    "doc_id": "RTR-04712",
+    "title": "MIYAZAWA SAYS EXCHANGE RATES WILL STAY STABLE",
+    "actual": "money-fx",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-19559",
+    "title": "KUWAIT SEES OPEC OUTPUT OVER CEILING TO END-YEAR",
+    "actual": "crude",
+    "predicted": "crude"
+   },
+   {
+    "doc_id": "RTR-13688",
+    "title": "BRAZIL SEAMEN'S STRIKE ENDS",
+    "actual": "ship",
+    "predicted": "ship"
+   },
+   {
+    "doc_id": "RTR-10394",
+    "title": "ABIDJAN PORT ACTIVITY RISES",
+    "actual": "ship",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-11222",
+    "title": "THATCHER SAYS TRADE TARGETS SET WITH MOSCOW",
+    "actual": "trade",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-09170",
+    "title": "MIDDLE EAST CURRENCY MARKET SEES KEY CHANGES",
+    "actual": "money-fx",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-01118",
+    "title": "GROUP TRIMS MATERIAL SCIENCES <MSC> STAKE",
+    "actual": "acq",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-17052",
+    "title": "NATIONAL MUTUAL CUTS AUSTRALIAN PRIME TO 17.75 PCT",
+    "actual": "interest",
+    "predicted": "interest"
+   },
+   {
+    "doc_id": "RTR-08085",
+    "title": "AUSTRALIAN OFFER FOR SAN MIGUEL SHARES",
+    "actual": "acq",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-08688",
+    "title": "IRAN SAID TO TEST FIRE SILKWORM MISSILE IN HORMUZ",
+    "actual": "ship",
+    "predicted": "ship"
+   },
+   {
+    "doc_id": "RTR-15239",
+    "title": "UAL <UAL> MAY RESPOND TO PILOTS TODAY",
+    "actual": "acq",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-03609",
+    "title": "ECUADOR OFFICIAL SEEKS OIL AID IN VENEZUELA",
+    "actual": "crude",
+    "predicted": "crude"
+   },
+   {
+    "doc_id": "RTR-09102",
+    "title": "FLEET TO ACQUIRE ASSETS OF MARK IV <IV> UNIT",
+    "actual": "acq",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-09415",
+    "title": "BALDRIGE SAYS JAPAN MUST OPEN ITS MARKETS",
+    "actual": "trade",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-10636",
+    "title": "ITALY RELAXES RESTRICTIONS ON LIRA IMPORTS",
+    "actual": "money-fx",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-16075",
+    "title": "JAPAN HAS NO PLANS TO CUT DISCOUNT RATE",
+    "actual": "interest",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-10808",
+    "title": "JAPAN CONDUCTS CURRENCY SURVEY OF BIG INVESTORS",
+    "actual": "money-fx",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-16710",
+    "title": "GULF CANADA <GOC> ACQUIRES SUEZ OIL STAKE",
+    "actual": "crude",
+    "predicted": "crude"
+   },
+   {
+    "doc_id": "RTR-03973",
+    "title": "SENATOR LUGAR CALLS FOR CARGO PREFERENCE REPEAL",
+    "actual": "ship",
+    "predicted": "ship"
+   },
+   {
+    "doc_id": "RTR-11753",
+    "title": "U.S. FED EXPLORES COMMODITY BASKET INDEX",
+    "actual": "money-fx",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-00353",
+    "title": "KUWAIT MINISTER SAYS NO EMERGENCY OPEC TALKS SET",
+    "actual": "crude",
+    "predicted": "crude"
+   },
+   {
+    "doc_id": "RTR-09797",
+    "title": "TREASURY'S BAKER SAYS HE STANDS BY PARIS PACT",
+    "actual": "money-fx",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-08666",
+    "title": "NIPPON LIFE, SHEARSON TIE-UP SEEN SETTING TREND",
+    "actual": "acq",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-16150",
+    "title": "COMMONWEALTH BANK CUTS AUSTRALIA PRIME TO 17.5 PCT",
+    "actual": "interest",
+    "predicted": "interest"
+   },
+   {
+    "doc_id": "RTR-16903",
+    "title": "WHITE HOUSE SAYS U.S. MONETARY POLICY CORRECT",
+    "actual": "money-fx",
+    "predicted": "interest"
+   },
+   {
+    "doc_id": "RTR-05870",
+    "title": "DUTCH PORT EMPLOYERS RESUME LAY-OFF PLANS",
+    "actual": "ship",
+    "predicted": "ship"
+   },
+   {
+    "doc_id": "RTR-00791",
+    "title": "NYMEX RULE CHANGE SEEN BOOSTING ENERGY TRADE",
+    "actual": "crude",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-05160",
+    "title": "BALDRIGE WARNS OF WORLD TRADE WAR DANGER",
+    "actual": "trade",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-01809",
+    "title": "BRITISH AIDE CRITICIZES U.S.PROTECTIONISM",
+    "actual": "trade",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-03596",
+    "title": "GOODYEAR <GT> TO RECEIVE 588 MLN DLRS FOR UNIT",
+    "actual": "acq",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-00059",
+    "title": "GULF BARGE FREIGHT RATES UP FURTHER ON CALL",
+    "actual": "ship",
+    "predicted": "interest"
+   },
+   {
+    "doc_id": "RTR-12806",
+    "title": "U.S. TREASURY POLICIES SAID UNCHANGED BY DEPARTURE",
+    "actual": "money-fx",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-11000",
+    "title": "PARIS MEET AGREED NOT TO PUBLISH BANDS - LAWSON",
+    "actual": "money-fx",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-11551",
+    "title": "TREASURY'S BAKER PURSUING S. ASIAN REVALUATIONS",
+    "actual": "money-fx",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-18549",
+    "title": "CITIBANK LOWERS AUSTRALIAN PRIME RATE TO 16 PCT",
+    "actual": "interest",
+    "predicted": "interest"
+   },
+   {
+    "doc_id": "RTR-03825",
+    "title": "U.K. BANKS OFFER FIXED-RATE MORTGAGES AT 10.2 PCT",
+    "actual": "interest",
+    "predicted": "interest"
+   },
+   {
+    "doc_id": "RTR-14949",
+    "title": "CONRAC <CAX> IN MERGER TALKS WITH SEVERAL",
+    "actual": "acq",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-08184",
+    "title": "JAPAN LONG-TERM PRIME SEEN CUT TO RECORD LOW SOON",
+    "actual": "interest",
+    "predicted": "interest"
+   },
+   {
+    "doc_id": "RTR-11746",
+    "title": "ANALYSTS SEE SLOW MOVE TO HIGHER U.S. PRIME RATE",
+    "actual": "interest",
+    "predicted": "interest"
+   },
+   {
+    "doc_id": "RTR-02228",
+    "title": "BANK OF ENGLAND RESISTS PRESSURE FOR RATE CUT",
+    "actual": "interest",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-04640",
+    "title": "JAPAN SHIPBUILDERS SEEK CARTEL TO RESTRICT OUTPUT",
+    "actual": "ship",
+    "predicted": "ship"
+   },
+   {
+    "doc_id": "RTR-19890",
+    "title": "CXR <CXRL.O>,TOROTEL <TRTL.O> TO SETTLE SUIT",
+    "actual": "acq",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-17682",
+    "title": "PEERLESS MANUFACTURING <PMFG.O> SELLS UNIT",
+    "actual": "acq",
+    "predicted": "crude"
+   },
+   {
+    "doc_id": "RTR-06488",
+    "title": "ANACOMP <AAC> ACQUIRES DATAGRAPHIX",
+    "actual": "acq",
+    "predicted": "acq"
+   },
+   {
+    "doc_id": "RTR-13649",
+    "title": "BRITAIN WARNS JAPAN OVER TRADE ROW",
+    "actual": "trade",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-17470",
+    "title": "WINDOW FOR BANK AID IN KUWAIT REMAINS SHUT",
+    "actual": "interest",
+    "predicted": "interest"
+   },
+   {
+    "doc_id": "RTR-02955",
+    "title": "TWO HUNDRED FEARED DEAD IN FERRY DISASTER",
+    "actual": "ship",
+    "predicted": "ship"
+   },
+   {
+    "doc_id": "RTR-12121",
+    "title": "LAWSON WANTS STERLING AROUND 1.60 DLRS, 2.90 MKS",
+    "actual": "money-fx",
+    "predicted": "money-fx"
+   },
+   {
+    "doc_id": "RTR-00354",
+    "title": "TAIWAN PLANS NEW TARIFF CUTS",
+    "actual": "trade",
+    "predicted": "trade"
+   },
+   {
+    "doc_id": "RTR-18523",
+    "title": "INDONESIA CUTS JULY CRUDE SUPPLIES TO JAPAN",
+    "actual": "crude",
+    "predicted": "crude"
+   }
+  ],
+  "membership": [
+   {
+    "doc_id": "RTR-07500",
+    "title": "U.S. SAYS NO SIGNAL BEING SENT BY SHIP MOVEMENTS",
+    "label": "ship",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-11161",
+    "title": "PARTNERS CALL GENCORP<GY> RESPONSE UNPRODUCTIVE",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-03622",
+    "title": "CONTINENTAL HEALTH <CTHL> PURCHASES MARKETECH",
+    "label": "acq",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-03256",
+    "title": "LONDON GRAIN FREIGHTS",
+    "label": "ship",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-20311",
+    "title": "BASTIAN TECHNOLOGIES MULLING COSMO <CSMO.O> BID",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-21343",
+    "title": "FED SEEN ADDING RESERVES VIA SYSTEM REPOS",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-05796",
+    "title": "STUDY PREDICTS U.S. DEPENDENCE ON FOREIGN OIL",
+    "label": "crude",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-21131",
+    "title": "AMPLE SUPPLIES LIMIT U.S. STRIKE'S OIL PRICE IMPACT",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-02542",
+    "title": "TALKS FAIL TO END BRAZILIAN SEAMEN'S STRIKE",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-01499",
+    "title": "BALDRIGE CONCERNED ABOUT KOREAN/TAIWAN DEFICITS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-17980",
+    "title": "LAWSON SAYS LOUVRE CURRENCY ACCORD SATISFACTORY",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-11738",
+    "title": "LILLY <LLY> CUTS LIPOSOME CO <LIPO> STAKE",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-10625",
+    "title": "ISLAMIC BANKS ESTABLISH 50 MLN DLR TRADE PORTFOLIO",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-20039",
+    "title": "LAWSON SAYS BP SHARE OFFER GOING AHEAD",
+    "label": "acq",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-11315",
+    "title": "EC APPROVES MEDITERRANEAN FINANCIAL PACKAGES",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-13144",
+    "title": "BAKER REPEATS HE HOPES PRIME HIKE TEMPORARY",
+    "label": "interest",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-00045",
+    "title": "CHEMLAWN <CHEM> RISES ON HOPES FOR HIGHER BIDS",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-17915",
+    "title": "POEHL LOOKS SET FOR EIGHT MORE YEARS AT BUNDESBANK",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-10388",
+    "title": "STORMY WEATHER TO DISRUPT NORTH SEA SHIPPING",
+    "label": "ship",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-17875",
+    "title": "SOUTH KOREA INCREASES DUTY ON CRUDE IMPORTS",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-03154",
+    "title": "MOODY'S MAY DOWNGRADE PIEDMONT AVIATION <PIE>",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-01949",
+    "title": "NIGERIAN CURRENCY FIRMS AT LATEST AUCTION",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-04125",
+    "title": "CHINA CLOSES SECOND ROUND OF OFFSHORE OIL BIDS",
+    "label": "crude",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-20922",
+    "title": "DELORS CALLS FOR G-7 MEETING",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-06483",
+    "title": "BANK OF ENGLAND LENDS ONE BILLION STG AT 10 PCT",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-05895",
+    "title": "EC WARNS U.S. AND JAPAN ON TRADE TENSIONS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-15448",
+    "title": "SWISS TO LAUNCH NEW SERIES OF MONEY MARKET PAPER",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-08098",
+    "title": "U.S. CREDIT MARKET OUTLOOK - MINI-REFUNDING",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-07950",
+    "title": "G-10 FINANCE OFFICIALS DISCUSS DEBT, CURRENCIES",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "DUP-009",
+    "title": "CORRECTED - TREASURY'S BAKER SUPPORTS FED MONETARY POLICY",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-07791",
+    "title": "U.S. SAYS USAIR <U> MAY BUY 51 PCT OF PIEDMONT",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-19285",
+    "title": "U.S. OIL PRICES STRONG AHEAD OF OPEC MEETING",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-14623",
+    "title": "GROUP RAISES TEXSTYRENE <FOAM> STAKE TO 11.7 PCT",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-21523",
+    "title": "ANIMAL FEED SHIP ON FIRE AGAIN AT CHINESE PORT",
+    "label": "ship",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-16096",
+    "title": "YIELD RISES ON 30-DAY SAMA DEPOSITS",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-19927",
+    "title": "VENEZUELA BUDGET SEES 16.35 DLRS OIL PRICE",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-01335",
+    "title": "PANCANADIAN TO SELL BRITISH INTERESTS",
+    "label": "crude",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-06841",
+    "title": "CANADIAN PACIFIC <CP> SEEKS BUYER FOR UNIT",
+    "label": "acq",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-09777",
+    "title": "TRADE SURPLUS CUT WOULD BENEFIT JAPAN - SUMITA",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-19163",
+    "title": "REAGAN SAYS TRADE BILL FACES VETO IN PRESENT FORM",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-03371",
+    "title": "U.S. BILL AUCTION RATES AVERAGE 5.63, 5.59 PCT",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-20021",
+    "title": "AQUINO SAYS MANILA WATCHING INTEREST RATES CLOSELY",
+    "label": "interest",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-11041",
+    "title": "SANTA FE <SFX> AWARE OF HENLEY <HENG> STAKE",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-13245",
+    "title": "ZAMBIAN CURRENCY FALLS AT FOREIGN EXCHANGE AUCTION",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-19505",
+    "title": "SAUDI OIL COMPANY GETS NEW ACTING GOVERNOR",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-01226",
+    "title": "ROSTENKOWSKI RELUCTANT TO BACK TAX HIKE",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-09208",
+    "title": "ABU DHABI TO REOPEN GULF OILFIELD HIT IN 1986 RAID",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-20114",
+    "title": "<PLUM HOLDING INC> STARTS HOILLY SUGAR <HLY> BID",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-02054",
+    "title": "MANNESMANN SEEKS STAKE IN U.S. FIRM",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-16091",
+    "title": "KUWAIT INCREASES STAKE IN SIME DARBY",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-16076",
+    "title": "AUSTRALIAN UNIONS AND NSW GOVERNMENT REACH DEAL",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-08244",
+    "title": "JAPAN SAYS IT TRYING TO EXPAND DOMESTIC DEMAND",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-15816",
+    "title": "CANADIAN BANK RATE RISES IN WEEK",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-13244",
+    "title": "EC AGREES ON NEED TO STRENGTHEN EMS",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-03449",
+    "title": "SUMITA SAYS LITTLE ROOM FOR BANK TO EASE POLICY",
+    "label": "interest",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-18865",
+    "title": "RIO DE JANEIRO DOCKERS STRIKE",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-10947",
+    "title": "CRUDE OIL NETBACKS UP IN U.S., MEDITERRANEAN",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-01506",
+    "title": "CONVENIENT FOOD MART <CFMI> AGREES TO BUY CHAIN",
+    "label": "acq",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-18357",
+    "title": "U.S. HOUSE PASSES MIDEAST GULF BILL",
+    "label": "ship",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-06111",
+    "title": "PLAINS <PLNS> POSTS RESERVES INCREASES",
+    "label": "crude",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-04048",
+    "title": "TAIWAN FURTHER RELAXES FOREIGN GOODS IMPORT CURBS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-03028",
+    "title": "BRAZIL SEAMEN CONTINUE STRIKE DESPITE COURT",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-06125",
+    "title": "U.S OIL TAX WOULD NOT AFFECT PDVSA-CHAMPLIN DEAL",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-16117",
+    "title": "WESTERN MINING SELLS ACM STAKE",
+    "label": "acq",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-13261",
+    "title": "U.S. CREDIT MARKET OUTLOOK - CAUTIOUS TRADING",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-04425",
+    "title": "MONTEDISON, OTHER REFINERIES TO SHUT FOR WORK",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-16770",
+    "title": "JAPAN'S LDP TO CALL FOR FLEXIBLE MONETARY POLICIES",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-07196",
+    "title": "PANAMA CANAL OFFICIAL CONFIRMS NO 1988 TOLL RISE",
+    "label": "ship",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-11103",
+    "title": "U.S. CREDIT MARKETS END UNDER EXTREME PRESSURE",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-06413",
+    "title": "TEXACO <TX> TO CEASE POSTING TEXAS OIL PRICE",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-13184",
+    "title": "COLOMBIA'S MAIN OIL PIPELINE ATTACKED",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-08234",
+    "title": "NIGERIA CHANGES AUCTION RULES TO DEFEND NAIRA",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-03046",
+    "title": "HUTCHISON UNIT BUYS CONTAINER CRANES FROM JAPAN",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-17448",
+    "title": "BUNDESBANK REPORTED TO HAVE NO PLAN FOR RATE CUT",
+    "label": "interest",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-17462",
+    "title": "MOSCOW SAYS WILL RETALIATE AGAINST GULF ATTACKS",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-05125",
+    "title": "SAUDI ARABIA DECIDES TO ACCEPT BRAZIL CREDIT",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-07067",
+    "title": "CANADIAN ROXY IN NEW ALBERTA OIL DISCOVERY",
+    "label": "crude",
+    "cluster": 5
+   },
+   {
+    "doc_id": "DUP-001",
+    "title": "UPDATE 1-COLOMBIAN OIL EXPORTS NOT AFFECTED BY QUAKE",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-04201",
+    "title": "BORG-WARNER <BOR> TO SELL UNIT FOR 240 MLN DLRS",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-01948",
+    "title": "PAPUA NEW GUINEA PLANS RESOURCES INVESTMENT AGENCY",
+    "label": "crude",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-15384",
+    "title": "GERMAN BANKERS' REMARKS REVIVE TALK OF RATE CUT",
+    "label": "interest",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-02647",
+    "title": "SANTA FE SOUTHERN <SFX> APPEALS MERGER RULING",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-19832",
+    "title": "CHEVRON N.SEA FIND MAY HOLD 300 MLN BBLS -ANALYSTS",
+    "label": "crude",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-20662",
+    "title": "ECUADOR'S CEPE NAMES NEW HEAD",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-07961",
+    "title": "FREIGHT, INSURANCE PROPOSED FOR CCC SALES - USDA",
+    "label": "ship",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-05734",
+    "title": "N.Z. PORTS REOPEN, BUT FURTHER CLOSURES POSSIBLE",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-12732",
+    "title": "ANZ BANK IN N.Z. RAISES INDICATOR LENDING RATE",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-14881",
+    "title": "JAPAN GIVEN LITTLE HOPE OF AVOIDING U.S. SANCTIONS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-19506",
+    "title": "UAE OIL MINISTER OTEIBA VISITS EGYPT - AGENCY",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-18231",
+    "title": "U.S. TO PROTECT ONLY AMERICAN SHIPS",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-00273",
+    "title": "SAUDI FEBRUARY CRUDE OUTPUT PUT AT 3.5 MLN BPD",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-11658",
+    "title": "U.S. OFFICIAL SEES EVIDENCE OF EXPORT GROWTH",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-04740",
+    "title": "TWO BRAZILIAN SHIPPING FIRMS SETTLE WITH STRIKERS",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-14055",
+    "title": "VOLCKER SEES TIGHT POLICY HURTING INVESTMENT",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-16177",
+    "title": "BANK OF JAPAN TO SELL 800 BILLION YEN IN BILLS",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-07626",
+    "title": "SENATE WANTS JAPAN SEMICONDUCTER PACT ENFORCED",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-04310",
+    "title": "SECURITY PACIFIC <SPC> BUYS ORBANCO <ORBN>",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-03133",
+    "title": "LLOYDS BANK MATCHES BASE RATE CUT TO 10.5 PCT",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-07635",
+    "title": "C.O.M.B. <CMCO> TO ACQUIRE REST OF CABLE VALUE",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-10416",
+    "title": "U.K. MONEY MARKET GIVEN FURTHER 663 MLN STG HELP",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-06436",
+    "title": "SHIPS HELD UP AT CALCUTTA",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "DUP-004",
+    "title": "UPDATE 1-STOLTENBERG SAYS PARIS ACCORD POLICY TO CONTINUE",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-07310",
+    "title": "GERMAN BANKS SEE LOW INTEREST RATES CONTINUING",
+    "label": "interest",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-07011",
+    "title": "JAPAN TO ASK CHIP MAKERS TO SLASH OUTPUT FURTHER",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-18160",
+    "title": "NEED FOR BIGGER ALLIED FORCE IN GULF PLAYED DOWN",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-18050",
+    "title": "LAWSON CALLS INTERVENTION PROOF OF STABILITY GOAL",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-00281",
+    "title": "CHINA SIGNS WORLD BANK LOAN FOR TIANJIN PORT",
+    "label": "ship",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-09906",
+    "title": "ST LAWRENCE SEAWAY OPENING STILL MARCH 31",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-12259",
+    "title": "ROYAL BANK/CANADA UPS U.S. BASE RATE",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-17948",
+    "title": "JAPAN CONCERNED AT EC TRADE THREATS - MINISTER",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-08578",
+    "title": "U.K. PROFITTED FROM AUTUMN INTERVENTION - LAWSON",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-04591",
+    "title": "INTERCONNECT OFFERS TO BUY GATES LEARJET <GLJ>",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-20261",
+    "title": "NEW CONTAINER CRANES ARRIVE AT TANZANIA PORT",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-06166",
+    "title": "WAINCO OIL <WOL> COMPLETES WILDCAT WELL",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-16745",
+    "title": "MIYAZAWA SEES EVENTUAL LOWER U.S. TRADE DEFICIT",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-04518",
+    "title": "ALLIED-LYONS SEES NO CHANGE IN HIRAM WALKER STAKE",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-08710",
+    "title": "SUMITA SAYS BANK WILL INTERVENE IF NECESSARY",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-18332",
+    "title": "COLOMBIAN GROUP SUSPENDS BOMBINGS OF PIPELINES",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-15610",
+    "title": "FHLBB CHANGES SHORT-TERM DISCOUNT NOTE RATES",
+    "label": "interest",
+    "cluster": 2
+   },
+   {
+    "doc_id": "RTR-20959",
+    "title": "U.S. MILITARY LEADER PREDICTS IRANIAN RESPONSE",
+    "label": "crude",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-18470",
+    "title": "JAPAN FOREIGN SHIPBUILDING ORDERS FALL IN MAY",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-11102",
+    "title": "U.S. DOT APPROVES AMERICAN <AMR>-ACI <ACF> PACT",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-12472",
+    "title": "JAPAN WARNS OF ANTI-U.S. SENTIMENT IN TRADE ROW",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-03461",
+    "title": "HUNGARY TO DEVALUE FORINT AGAINST WESTERN UNITS",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-16788",
+    "title": "BALDRIGE TO LAUNCH FAR EAST TRADE DRIVE",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-00518",
+    "title": "ROTTERDAM PORT UNION AND EMPLOYERS TO MEET",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-06757",
+    "title": "PERU SHORT-TERM TRADE LINES RISE TO 430 MLN DLRS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-10748",
+    "title": "B AND C REORGANISES COMMERCIAL OPERATIONS",
+    "label": "ship",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-19062",
+    "title": "JAPAN MUST TRY HARDER TO CUT SURPLUS - MINISTER",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-21071",
+    "title": "GROUP SELLS MOST OF STAKE IN CCX INC <CCX>",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-19509",
+    "title": "NORWAY EXTENDS 7.5 PCT OIL OUTPUT CUT - MINISTRY",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-08699",
+    "title": "TAIWAN PROPOSES FURTHER TARIFF CUTS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-02219",
+    "title": "HOLDER PROPOSES UNITEL <UNV> SALE OR LIQUIDATION",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-12398",
+    "title": "WESTPAC IN N.Z. RAISES INDICATOR LENDING RATE",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-06091",
+    "title": "ANALYSTS SEE EARLY ONE POINT CUT IN U.K. BASE RATE",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-03216",
+    "title": "<SHARON STEEL CORP> EXTENDS EXCHANGE OFFER",
+    "label": "acq",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-21277",
+    "title": "TRANSATLANTIC ROW IMPERILS LOUVRE ACCORD-DEALERS",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-18108",
+    "title": "ENERGY SECRETARY SEES HIGHER OIL PRICES",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-06301",
+    "title": "API SAYS DISTILLATE, GAS STOCKS OFF IN WEEK",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-03433",
+    "title": "MIYAZAWA SAYS PARIS ACCORD HELPING STABILISE RATES",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-11817",
+    "title": "H.K. BANKS TO RAISE PRIME RATES SOON, DEALERS SAY",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-14987",
+    "title": "STOLTENBERG SEES MOVES TO STRENGTHEN PARIS ACCORD",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-18564",
+    "title": "COMMONWEALTH BANK CUTS AUSTRALIAN SPLIT PRIME",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-19092",
+    "title": "BELGIAN ONE-DAY STRIKE HITS TRANSPORT, SHIPPING",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-04345",
+    "title": "ST LAWRENCE SEAWAY TO OPEN ON SCHEDULE",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-08662",
+    "title": "YEUTTER SEES GATT CONSENSUS ON FARM TRADE REFORM",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-10606",
+    "title": "TAIWAN TO STUDY SUSPENDING FOREX CONTROLS",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-10873",
+    "title": "MEXICAN FIRST QTR CRUDE EXPORTS SEEN AT 15.25 DLRS",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-17436",
+    "title": "IRAN SAYS IT WILL COMBAT GULF INTERVENTION",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-15200",
+    "title": "TURKEY CALLS FOR DIALOGUE TO SOLVE DISPUTE",
+    "label": "crude",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-07643",
+    "title": "EC AND COMECON ENDS TALKS WITH PROGRESS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-15049",
+    "title": "FED EXPECTED TO SET CUSTOMER REPURCHASES",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-15230",
+    "title": "IRAQI TROOPS REPORTED PUSHING BACK IRANIANS",
+    "label": "crude",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-03830",
+    "title": "AMERICAN PRESIDENT <APS> TO LEASE MORE SHIPS",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-02449",
+    "title": "CONFIDENCE IN OPEC FIRMS U.S. ENERGY FUTURES",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-06856",
+    "title": "LDBRINKMAN <LDBC> CHIEF CUTS CENERGY <CRG> STAKE",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-11349",
+    "title": "KEYCORP <KEY> AGREES TO ACQUIRE UTAH BANK",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-08138",
+    "title": "PHILIPPINES POSTS 68 MLN DLR JANUARY TRADE DEFICIT",
+    "label": "trade",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-00894",
+    "title": "JAPAN MOVES TO TIGHTEN CHIP-EXPORT CURBS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-02046",
+    "title": "DIAMOND SHAMROCK <DIA> RAISES CRUDE OIL POSTINGS",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-16357",
+    "title": "TAIWAN ANNOUNCES NEW ROUND OF IMPORT TARIFF CUTS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-19238",
+    "title": "RHINE BLOCKED FOR THREE MORE WEEKS - SALVAGER",
+    "label": "ship",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-17758",
+    "title": "CCC INTEREST HIGHER IN JUNE, USDA SAYS",
+    "label": "interest",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-18257",
+    "title": "REAGAN SEEKS ROMANIA TRADE CONCESSION",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-01478",
+    "title": "SPAIN TO LAUNCH EXPORT DRIVE",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-08599",
+    "title": "GATT ROUND MAY STOP GROWING TRADE PROBLEMS - U.S.",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-11322",
+    "title": "TREASURY'S BAKER SAYS COOPERATION WORKING",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-08209",
+    "title": "STUDY SAYS OIL PRICE FALL SPURS BANKRUPTCIES",
+    "label": "crude",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-03047",
+    "title": "BOSPHORUS SHIPPING MOVES, ISTANBUL OFFICES CLOSE",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-02025",
+    "title": "YEUTTER PUTS CURRENCY BURDEN ON TAIWAN, KOREA",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-19433",
+    "title": "U.S. ASKS CONGRESS TO REVISE TARIFF CATEGORIES",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-14270",
+    "title": "VOLCKER SAYS FED POLICY NOT LINKED TO RATE RISE",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-10545",
+    "title": "GROS DENIES COURT ACTION AGAINST BRAZIL",
+    "label": "interest",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-16274",
+    "title": "FHLBB CHANGES SHORT-TERM DISCOUNT NOTE RATES",
+    "label": "interest",
+    "cluster": 2
+   },
+   {
+    "doc_id": "RTR-09943",
+    "title": "FED EXPECTED TO ADD RESERVES",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-01963",
+    "title": "ECONOMIC SPOTLIGHT - POLISH SANCTIONS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-11374",
+    "title": "REPUBLIC <RSLA> TO MERGE WITH PIONEER SAVINGS",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-03309",
+    "title": "BCI HOLDINGS TO SELL BOTTLED WATER DIVISION",
+    "label": "acq",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-03103",
+    "title": "BARCLAYS, MIDLAND FOLLOW NATWEST BASE RATE CUT",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-04712",
+    "title": "MIYAZAWA SAYS EXCHANGE RATES WILL STAY STABLE",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-02326",
+    "title": "STRIKING BRAZILIAN SEAMEN HOLD PAY TALKS",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-19559",
+    "title": "KUWAIT SEES OPEC OUTPUT OVER CEILING TO END-YEAR",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-19546",
+    "title": "EC, U.S. REMAIN DIVIDED OVER PASTA DISPUTE",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-03043",
+    "title": "NATIONAL WESTMINSTER BANK CUTS BASE RATE",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-17930",
+    "title": "TAIWAN CURBS INFLOWS OF FOREIGN EXCHANGE",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-20909",
+    "title": "IRAN FOREIGN MINISTER TELLS CUBA OF GULF SITUATION",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-13688",
+    "title": "BRAZIL SEAMEN'S STRIKE ENDS",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-21371",
+    "title": "WORLD TELECOMS WATCHDOG RELAXES CAR PHONE RULES",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-10394",
+    "title": "ABIDJAN PORT ACTIVITY RISES",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-15223",
+    "title": "WHITE HOUSE SAYS JAPANESE TARRIFFS LIKELY",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-15253",
+    "title": "INDUSTRIAL NATIONS RECONVENE FOR TALKS",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-05236",
+    "title": "NORWAY'S TRADE DEFICIT WIDENS IN FEBRUARY",
+    "label": "trade",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-11222",
+    "title": "THATCHER SAYS TRADE TARGETS SET WITH MOSCOW",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-09170",
+    "title": "MIDDLE EAST CURRENCY MARKET SEES KEY CHANGES",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "DUP-005",
+    "title": "Bank Of Finland Will Announce New Measures",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-01118",
+    "title": "GROUP TRIMS MATERIAL SCIENCES <MSC> STAKE",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-17052",
+    "title": "NATIONAL MUTUAL CUTS AUSTRALIAN PRIME TO 17.75 PCT",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-20653",
+    "title": "OUTER CONTINENTAL SHELF SALE POSTPONED",
+    "label": "crude",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-11234",
+    "title": "CALL MONEY PRESSURE FROM LARGE GERMAN BANKS",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-11430",
+    "title": "TREASURY'S BAKER SAYS U.S. BACKS STABILITY",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-08085",
+    "title": "AUSTRALIAN OFFER FOR SAN MIGUEL SHARES",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-00342",
+    "title": "JAPAN, U.S. SET TO BEGIN HIGH-LEVEL TRADE TALKS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-15410",
+    "title": "SAUDI RATES RISE AS BAHRAIN BANKS CAUGHT SHORT",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-11941",
+    "title": "FHLBB CHANGES SHORT-TERM DISCOUNT NOTE RATES",
+    "label": "interest",
+    "cluster": 2
+   },
+   {
+    "doc_id": "RTR-09479",
+    "title": "BRAZILIAN LABOUR UNREST SPREADS, MANY BANKS SHUT",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-01680",
+    "title": "GATT SETS UP DISPUTE PANEL ON CANADIAN HERRING",
+    "label": "trade",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-04714",
+    "title": "OPEC DEFENDING 18 DLR PRICE, SUBROTO SAYS",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-20769",
+    "title": "REAGAN SEES ROOM FOR INTEREST RATE DECLINES",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-11029",
+    "title": "BASS GROUP SAYS IT HAS HAD TALKS ON TAFT <TFB>",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-06578",
+    "title": "DOE SECRETARY FAVORS HIGHER SPR FILL RATE",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-08688",
+    "title": "IRAN SAID TO TEST FIRE SILKWORM MISSILE IN HORMUZ",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-18774",
+    "title": "U.K. COURT RULES AGAINST RTZ ON OIL FIELD COSTS",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-02952",
+    "title": "HONG KONG BANKS LEAVE INTEREST RATES UNCHANGED",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-05330",
+    "title": "BRAZILIAN BANK WORKERS DECIDE ON NATIONAL STRIKE",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-04172",
+    "title": "TAIWAN TO RELAX IMPORT CURBS ON MORE GOODS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-03514",
+    "title": "GERMAN CALL MONEY EASES AFTER LIQUIDITY INJECTION",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-00857",
+    "title": "CANADIAN SEAFARERS THREATEN STRIKE",
+    "label": "ship",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-15239",
+    "title": "UAL <UAL> MAY RESPOND TO PILOTS TODAY",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-12924",
+    "title": "AGENCY REPORTS 30 SHIPS WAITING AT PANAMA CANAL",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-01711",
+    "title": "TEXAS OIL REGULATOR CALLS FOR STATE TAX BREAKS",
+    "label": "crude",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-12774",
+    "title": "BELGIUM CUTS TREASURY CERTIFICATE RATES",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-08131",
+    "title": "EXXON OFFICIAL URGES PLANNING FOR NEXT OIL SURGE",
+    "label": "crude",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-05070",
+    "title": "AFTER G-6, ROUND ONE GOES TO CENTRAL BANKS",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-03609",
+    "title": "ECUADOR OFFICIAL SEEKS OIL AID IN VENEZUELA",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-12563",
+    "title": "YEUTTER STRESSES IMPORTANCE OF TRADE TALKS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-03394",
+    "title": "GROUP SEEKS PRIME MEDICAL <PMSI> HOLDER LIST",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-11242",
+    "title": "CHINA'S CITIC BUYS H.K. HOTEL FROM CHEUNG KONG",
+    "label": "acq",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-09102",
+    "title": "FLEET TO ACQUIRE ASSETS OF MARK IV <IV> UNIT",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-17452",
+    "title": "U.S. STUDY SAYS TARIFFS AND QUOTAS COULD BACKFIRE",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-07632",
+    "title": "JAPAN SAYS OECD STUDY ON SUBSIDIES STILL ONGOING",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-20262",
+    "title": "U.K. CREDIT POLICY SEEN STEADY, DESPITE BANK DATA",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-03283",
+    "title": "PRIMARY EUROSTERLING MARKET BOOMS DESPITE RATE CUT",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-09415",
+    "title": "BALDRIGE SAYS JAPAN MUST OPEN ITS MARKETS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-16251",
+    "title": "U.K. MONEY MARKET GIVEN FURTHER 68 MLN STG HELP",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-13958",
+    "title": "ITALY SAYS G-7 GIVES CHANCE TO VERIFY TOKYO ACCORD",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-03441",
+    "title": "SOVIET ECONOMIST SEES FEW 1987 GAINS IN U.S. TRADE",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-03360",
+    "title": "BANK BOARD SAYS MORTGAGE RATES DOWN IN FEBRUARY",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-17770",
+    "title": "U.S. BANCORP <USBC.O> HAS ACQUISITION APPROVAL",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-02155",
+    "title": "FED NOT EXPECTED TO TAKE MONEY MARKET ACTION",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-12908",
+    "title": "SALLIE MAE ADJUSTS SHORT-TERM DISCOUNT NOTE RATES",
+    "label": "interest",
+    "cluster": 2
+   },
+   {
+    "doc_id": "RTR-13266",
+    "title": "IEA FORECASTS SLOWER GROWTH IN OECD OIL DEMAND",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-15310",
+    "title": "WOJNILOWER SEES DROP IN U.S. INTEREST RATES",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-19539",
+    "title": "BANGLADESH'S TRADE GAP TO WIDEN IN 1987/88",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-10636",
+    "title": "ITALY RELAXES RESTRICTIONS ON LIRA IMPORTS",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-00991",
+    "title": "U.S. ASKS JAPAN END AGRICULTURE IMPORT CONTROLS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-12395",
+    "title": "DEUTSCHE AGREES FULL TAKEOVER OF FORMER EURASBANK",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-08672",
+    "title": "KUWAIT SAYS OPEC 2.4 MLN BPD BELOW CEILING",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-16075",
+    "title": "JAPAN HAS NO PLANS TO CUT DISCOUNT RATE",
+    "label": "interest",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-10808",
+    "title": "JAPAN CONDUCTS CURRENCY SURVEY OF BIG INVESTORS",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-06352",
+    "title": "THAI BANKS WEIGH NEW INTEREST RATE CUT",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-02853",
+    "title": "TWO HUNDRED PEOPLE RESCUED FROM SINKING FERRY",
+    "label": "ship",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-01684",
+    "title": "PARTNERSHIP CUTS STAKE IN ERC INTERNATIONAL<ERC>",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-06764",
+    "title": "HOUSE SUBCOMMITTEE VOTES CREDIT CARD RATE CAP",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-09348",
+    "title": "IRAN SAYS HAS BETTER WEAPONS THAN SILKWORM",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-16710",
+    "title": "GULF CANADA <GOC> ACQUIRES SUEZ OIL STAKE",
+    "label": "crude",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-15527",
+    "title": "LEBANESE POUND FALLS SHARPLY AGAINST DOLLAR",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-03973",
+    "title": "SENATOR LUGAR CALLS FOR CARGO PREFERENCE REPEAL",
+    "label": "ship",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-11753",
+    "title": "U.S. FED EXPLORES COMMODITY BASKET INDEX",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-17511",
+    "title": "SEOUL ANNOUNCES MORE TARIFF CUTS FOR U.S.",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-16005",
+    "title": "CRUDE OIL NETBACKS UP SHARPLY IN EUROPE, U.S.",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-00353",
+    "title": "KUWAIT MINISTER SAYS NO EMERGENCY OPEC TALKS SET",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-16277",
+    "title": "BOSTON FIVE <BFCS.O>, NEWORLD <NWOR.O> TO MERGE",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-11143",
+    "title": "GROUP SELLS STAKE IN COMDATA NETWORK <CDN>",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-11861",
+    "title": "U.S. CREDIT MARKET OUTLOOK - PRIME RATE",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-09797",
+    "title": "TREASURY'S BAKER SAYS HE STANDS BY PARIS PACT",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "DUP-002",
+    "title": "High Winds Keep Vessels Trapped In Baltic Ice",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-08666",
+    "title": "NIPPON LIFE, SHEARSON TIE-UP SEEN SETTING TREND",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-16150",
+    "title": "COMMONWEALTH BANK CUTS AUSTRALIA PRIME TO 17.5 PCT",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-16903",
+    "title": "WHITE HOUSE SAYS U.S. MONETARY POLICY CORRECT",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-09841",
+    "title": "BANK OF SPAIN PROVIDES YEAR RECORD ASSISTANCE FUNDS",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-14220",
+    "title": "U.S. URGES SURPLUS NATIONS TO BOOST GROWTH",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-05870",
+    "title": "DUTCH PORT EMPLOYERS RESUME LAY-OFF PLANS",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-06450",
+    "title": "ROTTERDAM SIGNS COOPERATION AGREEMENT WITH TOKYO",
+    "label": "trade",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-00791",
+    "title": "NYMEX RULE CHANGE SEEN BOOSTING ENERGY TRADE",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-05160",
+    "title": "BALDRIGE WARNS OF WORLD TRADE WAR DANGER",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-01809",
+    "title": "BRITISH AIDE CRITICIZES U.S.PROTECTIONISM",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-03153",
+    "title": "TWA <TWA> DECLINES COMMENT ON USAIR <U>",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-01343",
+    "title": "API SAYS DISTILLATE, GAS STOCKS OFF IN WEEK",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-03596",
+    "title": "GOODYEAR <GT> TO RECEIVE 588 MLN DLRS FOR UNIT",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-11352",
+    "title": "SOVIET UNION SEEN WATCHING CHINA GATT APPLICATION",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-11847",
+    "title": "BOND CORP COMPLETES CONSOLIDATED PRESS PURCHASE",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-12761",
+    "title": "AUSTRALIAN TUG CREWS DELAY FOREIGN CONTAINER SHIPS",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-00059",
+    "title": "GULF BARGE FREIGHT RATES UP FURTHER ON CALL",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-12806",
+    "title": "U.S. TREASURY POLICIES SAID UNCHANGED BY DEPARTURE",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-13543",
+    "title": "CHASE-AMP BANK CUTS AUSTRALIAN PRIME TO 17.75 PCT",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-04735",
+    "title": "COURT PUTS INJUNCTION ON DUTCH PORT REDUNDANCIES",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-20795",
+    "title": "REAGAN SAYS U.S. COMMITTED TO LOUVRE ACCORD",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-11000",
+    "title": "PARIS MEET AGREED NOT TO PUBLISH BANDS - LAWSON",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-11551",
+    "title": "TREASURY'S BAKER PURSUING S. ASIAN REVALUATIONS",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-18549",
+    "title": "CITIBANK LOWERS AUSTRALIAN PRIME RATE TO 16 PCT",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-11587",
+    "title": "U.S. CARGO PREFERENCE SQUABBLE CONTINUES",
+    "label": "ship",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-03825",
+    "title": "U.K. BANKS OFFER FIXED-RATE MORTGAGES AT 10.2 PCT",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "DUP-003",
+    "title": "CORRECTED - N.Z. PORTS REOPEN, BUT FURTHER DISRUPTION LIKELY",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-12162",
+    "title": "LONDON METAL FREIGHTS",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-12040",
+    "title": "FHLBB CHANGES SHORT-TERM DISCOUNT NOTE RATES",
+    "label": "interest",
+    "cluster": 2
+   },
+   {
+    "doc_id": "RTR-10356",
+    "title": "U.K. MONEY MARKET GIVEN 265 MLN STG ASSISTANCE",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-13946",
+    "title": "VOLCKER URGES QUICK AID TO DEBTOR NATIONS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-14949",
+    "title": "CONRAC <CAX> IN MERGER TALKS WITH SEVERAL",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-13053",
+    "title": "U.S. JOBS DATA SAID TO RULE OUT FED TIGHTENING",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-07312",
+    "title": "FED'S JOHNSON URGES STRONGER ALLIED GROWTH",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-02958",
+    "title": "FERRY DISASTER MAY RANK AMONG WORST TRAGEDIES",
+    "label": "ship",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-08184",
+    "title": "JAPAN LONG-TERM PRIME SEEN CUT TO RECORD LOW SOON",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-18493",
+    "title": "AUSTRALIAN CRUDE OUTPUT FALLS IN FIRST NINE MONTHS",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-19473",
+    "title": "MAXICARE <MAXI.O> ENDS PLANS TO SELL UNIT",
+    "label": "acq",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-00768",
+    "title": "ANALYSTS SEE NO OTHER BIDDER FOR PUROLATOR<PCC>",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-16563",
+    "title": "GANDER MOUNTAIN <GNDR.O> BUYS WESTERN WEAR FIRM",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-06208",
+    "title": "OPEC WANTS 18 DLR OIL PRICE - OAPEC OFFICIAL",
+    "label": "crude",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-10710",
+    "title": "BANK OF ENGLAND FORECASTS SURPLUS IN MONEY MARKET",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-11239",
+    "title": "FLETCHER CHALLENGE DISAPPOINTED AT NZ FOREST MOVES",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-11314",
+    "title": "U.S. TREASURY'S BAKER SEES EXPANSION CONTINUING",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-09253",
+    "title": "OIL ANALYST SEES PAPUA NEW GUINEA AS GOOD PROSPECT",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-19159",
+    "title": "MICROSEMI <MSCC.O> ACQUIRES HYBRID COMPONENTS",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-11746",
+    "title": "ANALYSTS SEE SLOW MOVE TO HIGHER U.S. PRIME RATE",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-02228",
+    "title": "BANK OF ENGLAND RESISTS PRESSURE FOR RATE CUT",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-03396",
+    "title": "CHRYSLER <C> AMC BUYOUT VALUED AT 1.55 BILLION",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-03285",
+    "title": "EUROPE SHIPPING EXPORTS TO S AFRICA OFF 40 PCT",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-08553",
+    "title": "HUGHES' U.S. RIG COUNT RISES TO 784",
+    "label": "crude",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-12731",
+    "title": "ANZ BANK TO CUT AUSTRALIAN PRIME RATE TO 18 PCT",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-16505",
+    "title": "U.S. FEBRUARY TRADE TO BE REPORTED ON NEW BASIS",
+    "label": "trade",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-05146",
+    "title": "SWEDISH TRADE SURPLUS RISES IN FEBRUARY",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-02819",
+    "title": "CHANNEL FERRY REPORTED SINKING OFF BELGIUM",
+    "label": "ship",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-20624",
+    "title": "US SENATE CUTS OFF STALL TACTICS ON GULF BILL",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-04640",
+    "title": "JAPAN SHIPBUILDERS SEEK CARTEL TO RESTRICT OUTPUT",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-02979",
+    "title": "GERMAN GOVERNMENT NEEDS SEEN RAISING BOND YIELDS",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-19890",
+    "title": "CXR <CXRL.O>,TOROTEL <TRTL.O> TO SETTLE SUIT",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-17682",
+    "title": "PEERLESS MANUFACTURING <PMFG.O> SELLS UNIT",
+    "label": "acq",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-19044",
+    "title": "JAPAN'S JUNE INTERIM TRADE SURPLUS NARROWS",
+    "label": "trade",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-07080",
+    "title": "U.K. MONEY MARKET GIVEN FURTHER 191 MLN STG HELP",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-05909",
+    "title": "U.K. MONEY MARKET RECEIVES 16 MLN STG ASSISTANCE",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-16871",
+    "title": "U.S. COMMERCE TRADE REPORT OMITS FREIGHT COSTS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-20525",
+    "title": "STANADYNE <STNA.O> PURCHASES AMBAC STAKE",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-16449",
+    "title": "DATAPRODUCTS <DPC> TO BUY IMAGING SOLUTIONS",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-14959",
+    "title": "INDEPENDENT CHAIRMAN FOR DUTCH CARGO DISPUTE",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-20071",
+    "title": "STOLTENBERG SAYS BAKER MEETING UNDERSCORES ACCORD",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-04881",
+    "title": "ITALIAN INTERBANK RATE RISES IN FEBRUARY",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-06488",
+    "title": "ANACOMP <AAC> ACQUIRES DATAGRAPHIX",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-03217",
+    "title": "FERRY DISASTER CLAIMS COULD TOP 30 MLN STG",
+    "label": "ship",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-13649",
+    "title": "BRITAIN WARNS JAPAN OVER TRADE ROW",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-12880",
+    "title": "FHLBB CHANGES SHORT-TERM DISCOUNT NOTE RATES",
+    "label": "interest",
+    "cluster": 2
+   },
+   {
+    "doc_id": "RTR-17470",
+    "title": "WINDOW FOR BANK AID IN KUWAIT REMAINS SHUT",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-14537",
+    "title": "BERMUDA STAR <BSL> LEASES VESSEL",
+    "label": "ship",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-06922",
+    "title": "VOLATILITY LIKELY TO REMAIN LOW IN DEBT FUTURES",
+    "label": "interest",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-02955",
+    "title": "TWO HUNDRED FEARED DEAD IN FERRY DISASTER",
+    "label": "ship",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-09076",
+    "title": "CANADA VOWS TO FIGHT U.S. POTASH ACTION",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-02417",
+    "title": "CONSENSUS BUILDS FOR WORLD AGRICULTURAL REFORM",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-09697",
+    "title": "BAKER SEES 15 TO 20 BILLION DLR DROP IN TRADE GAP",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-16429",
+    "title": "TRITON <OIL> SAYS PARIS BASIN RESERVES UP 39 PCT",
+    "label": "crude",
+    "cluster": 5
+   },
+   {
+    "doc_id": "RTR-08493",
+    "title": "IRAQ REPLACES OIL MINISTER IN BIG GOVT SHUFFLE",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-12121",
+    "title": "LAWSON WANTS STERLING AROUND 1.60 DLRS, 2.90 MKS",
+    "label": "money-fx",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-00354",
+    "title": "TAIWAN PLANS NEW TARIFF CUTS",
+    "label": "trade",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-05520",
+    "title": "RAINIER <RBAN> COMPLETES ACQUISITION",
+    "label": "acq",
+    "cluster": 3
+   },
+   {
+    "doc_id": "RTR-06981",
+    "title": "U.K. MONEY MARKET DEFICIT FORECAST AT 450 MLN STG",
+    "label": "money-fx",
+    "cluster": 1
+   },
+   {
+    "doc_id": "RTR-04028",
+    "title": "VENEZUELA TO LEND OIL TO ECUADOR FOR EXPORT",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-18523",
+    "title": "INDONESIA CUTS JULY CRUDE SUPPLIES TO JAPAN",
+    "label": "crude",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-12073",
+    "title": "IIF EXECUTIVE SEES INTEREST RATES DECLINING",
+    "label": "interest",
+    "cluster": 4
+   },
+   {
+    "doc_id": "RTR-17979",
+    "title": "COLOMBO TO DEFEND WATERS, INDIA READIES FLOTILLA",
+    "label": "ship",
+    "cluster": 0
+   },
+   {
+    "doc_id": "RTR-18085",
+    "title": "LUKMAN SEES STABLE OIL PRICE FOR NEXT COUPLE YEARS",
+    "label": "crude",
+    "cluster": 0
+   }
+  ]
+ },
+ "dup_pairs": [
+  {
+   "a": "RTR-11161",
+   "b": "RTR-11253",
+   "ta": "PARTNERS CALL GENCORP<GY> RESPONSE UNPRODUCTIVE",
+   "cosine": 0.9545802368515336,
+   "jaccard": 0.4689655172413793,
+   "kind": "near"
+  },
+  {
+   "a": "RTR-07950",
+   "b": "DUP-008",
+   "ta": "G-10 FINANCE OFFICIALS DISCUSS DEBT, CURRENCIES",
+   "cosine": 1.0,
+   "jaccard": 0.9856459330143541,
+   "kind": "near"
+  },
+  {
+   "a": "DUP-009",
+   "b": "RTR-07669",
+   "ta": "CORRECTED - TREASURY'S BAKER SUPPORTS FED MONETARY POLICY",
+   "cosine": 0.9965900770079409,
+   "jaccard": 0.981042654028436,
+   "kind": "near"
+  },
+  {
+   "a": "RTR-16770",
+   "b": "DUP-007",
+   "ta": "JAPAN'S LDP TO CALL FOR FLEXIBLE MONETARY POLICIES",
+   "cosine": 0.8957211274426609,
+   "jaccard": 0.7967479674796748,
+   "kind": "near"
+  },
+  {
+   "a": "RTR-08234",
+   "b": "DUP-006",
+   "ta": "NIGERIA CHANGES AUCTION RULES TO DEFEND NAIRA",
+   "cosine": 0.99570858199,
+   "jaccard": 0.9622641509433962,
+   "kind": "near"
+  },
+  {
+   "a": "DUP-001",
+   "b": "RTR-02767",
+   "ta": "UPDATE 1-COLOMBIAN OIL EXPORTS NOT AFFECTED BY QUAKE",
+   "cosine": 0.874706319506044,
+   "jaccard": 0.7157894736842105,
+   "kind": "near"
+  },
+  {
+   "a": "DUP-004",
+   "b": "RTR-12791",
+   "ta": "UPDATE 1-STOLTENBERG SAYS PARIS ACCORD POLICY TO CONTINUE",
+   "cosine": 0.9790428016358989,
+   "jaccard": 0.9476744186046512,
+   "kind": "near"
+  },
+  {
+   "a": "RTR-18160",
+   "b": "DUP-011",
+   "ta": "NEED FOR BIGGER ALLIED FORCE IN GULF PLAYED DOWN",
+   "cosine": 1.0000000000000002,
+   "jaccard": 0.9690721649484536,
+   "kind": "near"
+  },
+  {
+   "a": "RTR-08710",
+   "b": "RTR-08658",
+   "ta": "SUMITA SAYS BANK WILL INTERVENE IF NECESSARY",
+   "cosine": 1.0000000000000002,
+   "jaccard": 1.0,
+   "kind": "exact"
+  },
+  {
+   "a": "RTR-15610",
+   "b": "RTR-16274",
+   "ta": "FHLBB CHANGES SHORT-TERM DISCOUNT NOTE RATES",
+   "cosine": 1.0,
+   "jaccard": 0.2066115702479339,
+   "kind": "template"
+  },
+  {
+   "a": "RTR-15610",
+   "b": "RTR-11941",
+   "ta": "FHLBB CHANGES SHORT-TERM DISCOUNT NOTE RATES",
+   "cosine": 0.9999336681465687,
+   "jaccard": 0.18796992481203006,
+   "kind": "template"
+  },
+  {
+   "a": "RTR-15610",
+   "b": "RTR-12040",
+   "ta": "FHLBB CHANGES SHORT-TERM DISCOUNT NOTE RATES",
+   "cosine": 0.9998989829351026,
+   "jaccard": 0.21238938053097345,
+   "kind": "template"
+  },
+  {
+   "a": "RTR-15610",
+   "b": "RTR-12880",
+   "ta": "FHLBB CHANGES SHORT-TERM DISCOUNT NOTE RATES",
+   "cosine": 0.9999818073212198,
+   "jaccard": 0.19230769230769232,
+   "kind": "template"
+  },
+  {
+   "a": "RTR-06301",
+   "b": "RTR-01343",
+   "ta": "API SAYS DISTILLATE, GAS STOCKS OFF IN WEEK",
+   "cosine": 0.969888536777626,
+   "jaccard": 0.16417910447761194,
+   "kind": "template"
+  },
+  {
+   "a": "RTR-11817",
+   "b": "RTR-11848",
+   "ta": "H.K. BANKS TO RAISE PRIME RATES SOON, DEALERS SAY",
+   "cosine": 0.9999999999999998,
+   "jaccard": 1.0,
+   "kind": "exact"
+  },
+  {
+   "a": "RTR-16274",
+   "b": "RTR-11941",
+   "ta": "FHLBB CHANGES SHORT-TERM DISCOUNT NOTE RATES",
+   "cosine": 0.9999336681465687,
+   "jaccard": 0.1791044776119403,
+   "kind": "template"
+  },
+  {
+   "a": "RTR-16274",
+   "b": "RTR-12040",
+   "ta": "FHLBB CHANGES SHORT-TERM DISCOUNT NOTE RATES",
+   "cosine": 0.9998989829351026,
+   "jaccard": 0.21238938053097345,
+   "kind": "template"
+  },
+  {
+   "a": "RTR-16274",
+   "b": "RTR-12880",
+   "ta": "FHLBB CHANGES SHORT-TERM DISCOUNT NOTE RATES",
+   "cosine": 0.9999818073212198,
+   "jaccard": 0.183206106870229,
+   "kind": "template"
+  },
+  {
+   "a": "DUP-005",
+   "b": "RTR-07568",
+   "ta": "Bank Of Finland Will Announce New Measures",
+   "cosine": 1.0,
+   "jaccard": 0.9651162790697675,
+   "kind": "near"
+  },
+  {
+   "a": "RTR-11941",
+   "b": "RTR-12040",
+   "ta": "FHLBB CHANGES SHORT-TERM DISCOUNT NOTE RATES",
+   "cosine": 0.9996689496459207,
+   "jaccard": 0.27350427350427353,
+   "kind": "template"
+  },
+  {
+   "a": "RTR-11941",
+   "b": "RTR-12880",
+   "ta": "FHLBB CHANGES SHORT-TERM DISCOUNT NOTE RATES",
+   "cosine": 0.9999849519392796,
+   "jaccard": 0.18439716312056736,
+   "kind": "template"
+  },
+  {
+   "a": "RTR-12395",
+   "b": "DUP-010",
+   "ta": "DEUTSCHE AGREES FULL TAKEOVER OF FORMER EURASBANK",
+   "cosine": 0.9746093995137388,
+   "jaccard": 0.9026217228464419,
+   "kind": "near"
+  },
+  {
+   "a": "DUP-002",
+   "b": "RTR-07642",
+   "ta": "High Winds Keep Vessels Trapped In Baltic Ice",
+   "cosine": 1.0000000000000002,
+   "jaccard": 0.9836065573770492,
+   "kind": "near"
+  },
+  {
+   "a": "RTR-11587",
+   "b": "DUP-012",
+   "ta": "U.S. CARGO PREFERENCE SQUABBLE CONTINUES",
+   "cosine": 0.9981417258361805,
+   "jaccard": 0.9902439024390244,
+   "kind": "near"
+  },
+  {
+   "a": "DUP-003",
+   "b": "RTR-08214",
+   "ta": "CORRECTED - N.Z. PORTS REOPEN, BUT FURTHER DISRUPTION LIKELY",
+   "cosine": 0.9954080294764523,
+   "jaccard": 0.9622641509433962,
+   "kind": "near"
+  },
+  {
+   "a": "RTR-12040",
+   "b": "RTR-12880",
+   "ta": "FHLBB CHANGES SHORT-TERM DISCOUNT NOTE RATES",
+   "cosine": 0.999795056186243,
+   "jaccard": 0.19672131147540983,
+   "kind": "template"
+  }
+ ],
+ "recommendations": {
+  "RTR-06301": {
+   "title": "API SAYS DISTILLATE, GAS STOCKS OFF IN WEEK",
+   "category": "crude",
+   "unfiltered_top1": {
+    "doc_id": "RTR-01343",
+    "score": 0.9698502086742515,
+    "title": "API SAYS DISTILLATE, GAS STOCKS OFF IN WEEK"
+   },
+   "recs": [
+    {
+     "doc_id": "RTR-16005",
+     "title": "CRUDE OIL NETBACKS UP SHARPLY IN EUROPE, U.S.",
+     "category": "crude",
+     "score": 0.20239002698518468,
+     "terms": [
+      "gasoline",
+      "refinery",
+      "distillate",
+      "fell"
+     ]
+    },
+    {
+     "doc_id": "RTR-08209",
+     "title": "STUDY SAYS OIL PRICE FALL SPURS BANKRUPTCIES",
+     "category": "crude",
+     "score": 0.18409561207637423,
+     "terms": [
+      "api",
+      "institute",
+      "american",
+      "petroleum"
+     ]
+    },
+    {
+     "doc_id": "RTR-00273",
+     "title": "SAUDI FEBRUARY CRUDE OUTPUT PUT AT 3.5 MLN BPD",
+     "category": "crude",
+     "score": 0.17377340039196784,
+     "terms": [
+      "refinery",
+      "storage",
+      "bpd",
+      "fell"
+     ]
+    },
+    {
+     "doc_id": "RTR-04425",
+     "title": "MONTEDISON, OTHER REFINERIES TO SHUT FOR WORK",
+     "category": "crude",
+     "score": 0.16762401872393595,
+     "terms": [
+      "refinery",
+      "capacity",
+      "bpd",
+      "crude"
+     ]
+    },
+    {
+     "doc_id": "RTR-13266",
+     "title": "IEA FORECASTS SLOWER GROWTH IN OECD OIL DEMAND",
+     "category": "crude",
+     "score": 0.1505201408604518,
+     "terms": [
+      "fuel",
+      "bpd",
+      "fell",
+      "stock"
+     ]
+    }
+   ]
+  },
+  "RTR-08710": {
+   "title": "SUMITA SAYS BANK WILL INTERVENE IF NECESSARY",
+   "category": "money-fx",
+   "unfiltered_top1": {
+    "doc_id": "RTR-03433",
+    "score": 0.21169759128095095,
+    "title": "MIYAZAWA SAYS PARIS ACCORD HELPING STABILISE RATES"
+   },
+   "recs": [
+    {
+     "doc_id": "RTR-03433",
+     "title": "MIYAZAWA SAYS PARIS ACCORD HELPING STABILISE RATES",
+     "category": "money-fx",
+     "score": 0.21169759128095095,
+     "terms": [
+      "paris",
+      "cooperate",
+      "france",
+      "britain"
+     ]
+    },
+    {
+     "doc_id": "RTR-03449",
+     "title": "SUMITA SAYS LITTLE ROOM FOR BANK TO EASE POLICY",
+     "category": "interest",
+     "score": 0.20579025266608492,
+     "terms": [
+      "sumita",
+      "satoshi",
+      "yen",
+      "governor"
+     ]
+    },
+    {
+     "doc_id": "RTR-11430",
+     "title": "TREASURY'S BAKER SAYS U.S. BACKS STABILITY",
+     "category": "money-fx",
+     "score": 0.20405142172678142,
+     "terms": [
+      "consistent",
+      "broadly",
+      "paris",
+      "cooperate"
+     ]
+    },
+    {
+     "doc_id": "RTR-09797",
+     "title": "TREASURY'S BAKER SAYS HE STANDS BY PARIS PACT",
+     "category": "money-fx",
+     "score": 0.20317286081078084,
+     "terms": [
+      "consistent",
+      "broadly",
+      "paris",
+      "yen"
+     ]
+    },
+    {
+     "doc_id": "RTR-16770",
+     "title": "JAPAN'S LDP TO CALL FOR FLEXIBLE MONETARY POLICIES",
+     "category": "money-fx",
+     "score": 0.19752592681617628,
+     "terms": [
+      "sumita",
+      "satoshi",
+      "necessary",
+      "adequate"
+     ]
+    }
+   ]
+  },
+  "RTR-11349": {
+   "title": "KEYCORP <KEY> AGREES TO ACQUIRE UTAH BANK",
+   "category": "acq",
+   "unfiltered_top1": {
+    "doc_id": "RTR-17770",
+    "score": 0.277921695122609,
+    "title": "U.S. BANCORP <USBC.O> HAS ACQUISITION APPROVAL"
+   },
+   "recs": [
+    {
+     "doc_id": "RTR-17770",
+     "title": "U.S. BANCORP <USBC.O> HAS ACQUISITION APPROVAL",
+     "category": "acq",
+     "score": 0.277921695122609,
+     "terms": [
+      "bancorp",
+      "salt",
+      "conversion",
+      "definitive"
+     ]
+    },
+    {
+     "doc_id": "RTR-07635",
+     "title": "C.O.M.B. <CMCO> TO ACQUIRE REST OF CABLE VALUE",
+     "category": "acq",
+     "score": 0.17693846532173663,
+     "terms": [
+      "subject",
+      "shareholder",
+      "transaction",
+      "proposal"
+     ]
+    },
+    {
+     "doc_id": "RTR-16277",
+     "title": "BOSTON FIVE <BFCS.O>, NEWORLD <NWOR.O> TO MERGE",
+     "category": "acq",
+     "score": 0.17231916021460114,
+     "terms": [
+      "bancorp",
+      "merger",
+      "become",
+      "asset"
+     ]
+    },
+    {
+     "doc_id": "RTR-06856",
+     "title": "LDBRINKMAN <LDBC> CHIEF CUTS CENERGY <CRG> STAKE",
+     "category": "acq",
+     "score": 0.16449682927610304,
+     "terms": [
+      "family",
+      "share",
+      "outstanding",
+      "common"
+     ]
+    },
+    {
+     "doc_id": "RTR-02219",
+     "title": "HOLDER PROPOSES UNITEL <UNV> SALE OR LIQUIDATION",
+     "category": "acq",
+     "score": 0.16188363602006778,
+     "terms": [
+      "shareholder",
+      "merger",
+      "common",
+      "outstanding"
+     ]
+    }
+   ]
+  }
+ },
+ "preprocessing": [
+  {
+   "config": "A. Raw tokens (no cleaning)",
+   "description": "unigrams",
+   "vocab_before_pruning": 8969,
+   "indexed_vocab": 3885,
+   "tokens": 71642,
+   "nb_accuracy": [
+    0.8128440366972477,
+    0.017015813753203143
+   ],
+   "nb_macro_f1": [
+    0.8137434130242005,
+    0.01711459306482606
+   ],
+   "km_purity": [
+    0.5573407202216066,
+    0.05549576495575027
+   ],
+   "km_rand_index": [
+    0.7884425977223761,
+    0.028209182492729377
+   ],
+   "rec_precision_at_5": [
+    0.7108033240997229,
+    0.0
+   ]
+  },
+  {
+   "config": "B. Lowercase + markup/numbers removed",
+   "description": "lowercase, strip markup, drop numbers, unigrams",
+   "vocab_before_pruning": 6973,
+   "indexed_vocab": 3349,
+   "tokens": 65521,
+   "nb_accuracy": [
+    0.8092592592592591,
+    0.04520946524345818
+   ],
+   "nb_macro_f1": [
+    0.810031062386124,
+    0.047376359860641204
+   ],
+   "km_purity": [
+    0.6476190476190476,
+    0.04718537073220297
+   ],
+   "km_rand_index": [
+    0.82130739936424,
+    0.019653266106454837
+   ],
+   "rec_precision_at_5": [
+    0.7243697478991595,
+    0.0
+   ]
+  },
+  {
+   "config": "C. B + stop-words (generic + domain)",
+   "description": "lowercase, strip markup, drop numbers, stop-words, domain stop-words, unigrams",
+   "vocab_before_pruning": 6822,
+   "indexed_vocab": 3217,
+   "tokens": 37811,
+   "nb_accuracy": [
+    0.8518518518518519,
+    0.040572041296678976
+   ],
+   "nb_macro_f1": [
+    0.8528998748026207,
+    0.039783436931344375
+   ],
+   "km_purity": [
+    0.6168067226890757,
+    0.018444904911097307
+   ],
+   "km_rand_index": [
+    0.8140874327258993,
+    0.00831161754279693
+   ],
+   "rec_precision_at_5": [
+    0.7254901960784313,
+    0.0
+   ]
+  },
+  {
+   "config": "D. C + Porter stemming",
+   "description": "lowercase, strip markup, drop numbers, stop-words, domain stop-words, Porter stemming, unigrams",
+   "vocab_before_pruning": 4919,
+   "indexed_vocab": 2477,
+   "tokens": 37811,
+   "nb_accuracy": [
+    0.8629629629629629,
+    0.032288140322523494
+   ],
+   "nb_macro_f1": [
+    0.8638568231023822,
+    0.031902409843915416
+   ],
+   "km_purity": [
+    0.5927170868347339,
+    0.03718639053283156
+   ],
+   "km_rand_index": [
+    0.8057470179082868,
+    0.01803579749648235
+   ],
+   "rec_precision_at_5": [
+    0.7159663865546217,
+    0.0
+   ]
+  },
+  {
+   "config": "E. C + WordNet lemmatization",
+   "description": "lowercase, strip markup, drop numbers, stop-words, domain stop-words, WordNet lemmatization, unigrams",
+   "vocab_before_pruning": 5276,
+   "indexed_vocab": 2609,
+   "tokens": 37798,
+   "nb_accuracy": [
+    0.861111111111111,
+    0.03513641844631532
+   ],
+   "nb_macro_f1": [
+    0.8622518809711245,
+    0.03485575052483246
+   ],
+   "km_purity": [
+    0.6649859943977592,
+    0.07253982615900816
+   ],
+   "km_rand_index": [
+    0.8333144493752556,
+    0.029686376260063395
+   ],
+   "rec_precision_at_5": [
+    0.7210084033613444,
+    0.0
+   ]
+  },
+  {
+   "config": "F. E + bigrams",
+   "description": "lowercase, strip markup, drop numbers, stop-words, domain stop-words, WordNet lemmatization, 1-2-grams",
+   "vocab_before_pruning": 35285,
+   "indexed_vocab": 5270,
+   "tokens": 75239,
+   "nb_accuracy": [
+    0.8481481481481483,
+    0.02237601106221219
+   ],
+   "nb_macro_f1": [
+    0.8509881271792519,
+    0.022516926858413472
+   ],
+   "km_purity": [
+    0.5579831932773109,
+    0.05561194166376861
+   ],
+   "km_rand_index": [
+    0.7861769426871872,
+    0.031711790248497275
+   ],
+   "rec_precision_at_5": [
+    0.7232492997198879,
+    0.0
+   ]
+  }
+ ],
+ "dedup": [
+  {
+   "mode": "Keep all (no de-duplication)",
+   "docs": 372,
+   "nb_accuracy": [
+    0.8576576576576576,
+    0.026358087996987002
+   ],
+   "nb_macro_f1": [
+    0.8611372344285589,
+    0.027634101718221827
+   ],
+   "km_purity": [
+    0.6516129032258065,
+    0.04506518191332447
+   ],
+   "km_rand_index": [
+    0.8178477233863722,
+    0.01639607458898557
+   ],
+   "rec_precision_at_5": [
+    0.7279569892473119,
+    0.0
+   ]
+  },
+  {
+   "mode": "Remove exact + near duplicates",
+   "docs": 357,
+   "nb_accuracy": [
+    0.861111111111111,
+    0.03513641844631532
+   ],
+   "nb_macro_f1": [
+    0.8622518809711245,
+    0.03485575052483246
+   ],
+   "km_purity": [
+    0.6649859943977592,
+    0.07253982615900816
+   ],
+   "km_rand_index": [
+    0.8333144493752556,
+    0.029686376260063395
+   ],
+   "rec_precision_at_5": [
+    0.7210084033613444,
+    0.0
+   ]
+  },
+  {
+   "mode": "Also remove template duplicates",
+   "docs": 352,
+   "nb_accuracy": [
+    0.8660377358490567,
+    0.026279977881479465
+   ],
+   "nb_macro_f1": [
+    0.8653793424459428,
+    0.02637370309146353
+   ],
+   "km_purity": [
+    0.6613636363636364,
+    0.05099095487769223
+   ],
+   "km_rand_index": [
+    0.8422073297073297,
+    0.01751233523923287
+   ],
+   "rec_precision_at_5": [
+    0.7153409090909091,
+    0.0
+   ]
+  }
+ ],
+ "leakage": {
+  "n_pairs": 26,
+  "kinds": {
+   "near": 13,
+   "exact": 2,
+   "template": 11
+  },
+  "n_docs_with_dup": 30,
+  "leaked_test_docs": 58,
+  "leaked_accuracy": 1.0,
+  "clean_test_docs": 1052,
+  "clean_accuracy": 0.8545627376425855,
+  "top1_is_duplicate": 1.0,
+  "dup_pairs_same_cluster": 1.0
+ },
+ "k_sweep": [
+  {
+   "k": 3,
+   "purity": 0.45938375350140054,
+   "rand_index": 0.7252961109537447,
+   "sse": 335.8506648534006
+  },
+  {
+   "k": 4,
+   "purity": 0.5359477124183006,
+   "rand_index": 0.7559143507590301,
+   "sse": 332.6824183542842
+  },
+  {
+   "k": 5,
+   "purity": 0.6302521008403361,
+   "rand_index": 0.8213944753931536,
+   "sse": 329.0078709774996
+  },
+  {
+   "k": 6,
+   "purity": 0.7012138188608777,
+   "rand_index": 0.8465625950754833,
+   "sse": 326.7921948859825
+  },
+  {
+   "k": 7,
+   "purity": 0.6153127917833799,
+   "rand_index": 0.8143759376409742,
+   "sse": 324.40685314167956
+  },
+  {
+   "k": 8,
+   "purity": 0.611577964519141,
+   "rand_index": 0.8042730200694511,
+   "sse": 322.29550432206383
+  },
+  {
+   "k": 10,
+   "purity": 0.627450980392157,
+   "rand_index": 0.8216724892204073,
+   "sse": 319.12878603061284
+  },
+  {
+   "k": 12,
+   "purity": 0.6041083099906629,
+   "rand_index": 0.8139038386890337,
+   "sse": 316.27420494289976
+  }
+ ]
+}

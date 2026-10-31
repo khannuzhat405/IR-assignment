@@ -1,0 +1,9 @@
+streamlit>=1.35
+pandas>=2.0
+numpy>=1.24
+plotly>=5.18
+nltk>=3.8
+matplotlib>=3.7
+# only for regenerating the report / screenshots:
+reportlab>=4.0
+playwright>=1.40
